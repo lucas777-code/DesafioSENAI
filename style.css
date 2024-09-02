@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+/* Zerando as configurações */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anek Devanagari",sans-serif;
+}
+
+
+.header{
+    width: 1500px;
+    height: 100px;
+    background-color: rgb(76, 76, 76);
+    position: sticky;
+    top: 0;
+
+    /* leve sombreado no header */
+    /* offset-x| offset-y|blur-radius|color */
+    box-shadow: 5px 5px 10px #2e2e2e;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.logo{
+    width: 190px;
+    height: 100px;
+    margin-left: -950px;
+}
+
+/* Navegação */
+nav a{
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* Transição */
+nav a:hover{
+    padding: 5px 0px;
+    color: black;
+}
+
+/* Botão Cadastre-se */
+.botao{
+    background-color: red;
+    color: white;
+    border-color: red;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+/* Transição botão cadastre-se */
+.botao:hover{
+    background-color: black;
+    padding: 5px 15px 1px;
+    color: #fff;
+}
+
+/* Transição icones */
+.fa hover{
+    color: white;
+}
+
+/* Banner principal */
+main{
+    position: relative;
+    z-index: -1;
+}
+
+main img{
+    width:1500px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+
+span{
+    color: red;
+    font-weight: bolder;
+}
+
+.destaqueTexto{
+    width: 250px;
+    height: 160px;
+    background-color: #ffffffc7;
+    /* Vai posicionar o texto*/
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-radius: 10px;
+    font-size: 100%;
+}
+
+.destaqueTexto h1 {
+    margin: 1px 15px;
+}
+
+.destaqueTexto input{
+    background-color: red;
+    padding: 5px 15px 1px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    /* margin-top: 1px; */
+    margin: 5px 75px;
+    border:0;
+    cursor: pointer;
+}
+
+.destaqueTexto input:hover {
+    background-color: black;
+    color: #fff;
+}
+
+/* Sessão */
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 40px;
+}
+
+section img{
+    width: 400px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+section a{
+    height: 250px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.5);
+    border-radius: 5%;
+    position:relative;
+    overflow: hidden;
+    transition:transform 0.5s;
+}
+
+/* Transição gradient */
+section a::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    top: -300px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c1c,
+    #c38c8c, #dcdbd8);
+    position: absolute;
+    transition: 0.5s;
+}
+
+section a:hover::after{
+    top:0;
+}
+
+section a:hover{
+    transform: translate(-10px);
+}
+
+section a:hover{
+    transform: translateY(-10px);
+}
+
+section p{
+    margin: 20px 0 15px 0;
+}
+
+/* Borda img whatsaap */
+.fixed{
+    position: fixed;
+    /* Relative a view (html todo) */
+    width: 70px;
+    height: 70px;
+    font-weight: bolder;
+    right: 10px;
+    bottom: 110px;
+    background-color: lightgreen;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed img{
+    height: 50px;
+    width: 50px;
+    margin-top: -1px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 1500px;
+    border-top: 1px dashed red;
+    background-color: #2e2d2ddc;
+}
+
+footer img{
+    width: 150px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.footerTexto{
+    text-align: left;
+    margin-right: 150px;
+    color: #fff;
+}
